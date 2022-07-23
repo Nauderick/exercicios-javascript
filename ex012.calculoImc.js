@@ -1,0 +1,15 @@
+let input = require("readline-sync")
+console.log("============")
+console.log("Claculo IMC ")
+console.log("============")
+
+let peso = Number(input.question("Informe seu peso (Kg): "))
+let altura = Number(input.question("Informe sua altura (m): "))
+console.clear()
+console.log("============")
+console.log("Claculo IMC ")
+console.log("============")
+let imc = (peso / (altura * altura)).toFixed(2)
+
+if (imc >= 18.5 && imc <= 25) console.log(`IMC: ${imc}, Dentro do peso ideal!`)
+    else console.log(`IMC: ${imc}, Fora do peso ideal!`)

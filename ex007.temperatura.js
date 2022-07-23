@@ -1,0 +1,7 @@
+let input = require("readline-sync")
+console.log("Conversão de Fahrenheit para Celsius")
+let Fahrenheit = Number(input.question("Digite a temperatura em Fahrenheit: "))
+let celsius = ((Fahrenheit - 32) / 1.8).toFixed(2)
+console.clear()
+console.log("Conversão de Fahrenheit para Celsius")
+console.log(`Farenheit: ${Fahrenheit}°F convertido para Celsius: ${celsius}°C`)

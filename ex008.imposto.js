@@ -1,0 +1,8 @@
+let input = require("readline-sync")
+console.log("IMPOSTO")
+console.log("_______")
+let valorProduto = Number(input.question("Quanto custou o produto? R$"))
+console.clear()
+console.log("IMPOSTO")
+console.log("_______")
+console.log(`Vou pagar de imposto R$${(valorProduto * 0.6).toFixed(2)}`)
